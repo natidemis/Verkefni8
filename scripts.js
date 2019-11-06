@@ -43,8 +43,10 @@ const text = (() => {
 
   function formHandler(e) {
     e.preventDefault();
-    add(newItem.value);
-    newItem.value = "";
+    if(!(newItem.value == null || newItem.value.trim() === '')){
+      add(newItem.value);
+      newItem.value = "";
+    }
     console.log('halló heimur');
   }
 
