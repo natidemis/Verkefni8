@@ -34,8 +34,9 @@ const text = (() => {
         edit(everyLi[i].children[1]);
     });
     everyLi[i].children[2].addEventListener("click", () => {
-      deleteItem(everyLi[i]);
+      deleteItem(everyLi[i].children[2].parentElement);
     })
+    
   }
 
     
