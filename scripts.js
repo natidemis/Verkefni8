@@ -27,7 +27,7 @@ const text = (() => {
     _form.addEventListener('submit', formHandler);
     // TODO láta hluti í _items virka
      newItem = document.querySelector(".form__input");
-    const everyLi = document.getElementsByTagName("li");
+    const everyLi = document.querySelectorAll("li");
     for(let i = 0; i < everyLi.length; i++){
       everyLi[i].children[0].addEventListener("click", () => {finish(everyLi[i])});
       everyLi[i].children[1].addEventListener("click", () => {
